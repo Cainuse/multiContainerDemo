@@ -12,7 +12,7 @@ script:
 after_succcess:
   - docker build -t cainuse/multi-client ./client
   - docker build -t cainuse/multi-nginx ./nginx
-  - docker build -t cainuse/multi-sterver ./server
+  - docker build -t cainuse/multi-server ./server
   - docker build -t cainuse/multi-worker ./worker
   # Log in to the docker CLI
   # Retrieve dockerpassword from stdout and pipe that to the stdin to docker login command
